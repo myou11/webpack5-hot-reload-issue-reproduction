@@ -1,0 +1,58 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "flowtype",
+    "react",
+    "prettier",
+    "react-hooks"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "prettier/prettier": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-curly-brace-presence": "error",
+    "react/jsx-curly-spacing": "error",
+    "react/jsx-equals-spacing": "error",
+    "react/jsx-fragments": "error",
+    "react/jsx-key": "error",
+    "react/no-array-index-key": "warn",
+    "react/no-danger": "error",
+    "react/no-did-mount-set-state": "error",
+    "react/no-did-update-set-state": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-unsafe": "error",
+    "react/no-unused-prop-types": "warn",
+    "react/prefer-es6-class": "warn",
+    "react/prefer-stateless-function": "warn",
+    "react/self-closing-comp": "error",
+    "react/sort-prop-types": "error",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
