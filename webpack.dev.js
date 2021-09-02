@@ -11,6 +11,11 @@ module.exports = env =>
             hot: true,
             historyApiFallback: true,
             open: true,
-            client: false, // set to true if you want to see an overlay with warnings/errors on the UI during development
+            client: {
+                overlay: {
+                    errors: true,
+                    warnings: false,
+                },
+            },
         },
     });
